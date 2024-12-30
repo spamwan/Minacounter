@@ -1,0 +1,3 @@
+- tmi.js library used for Twitch chat integration: https://github.com/tmijs/tmi.js
+- Vividly font from https://www.dafont.com/vividly.font
+- config.js banner text generated using figlet with font from http://www.figlet.org/fontdb_example.cgi?font=larry3d.flf

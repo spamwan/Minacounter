@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Vividly';
+    src:
+        url('fonts/Vividly-Regular.otf'),
+        url('fonts/Vividly-Regular.ttf')
+}
+
+body {
+    background-color: rgba(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@property --num {
+    syntax: '<integer>';
+    initial-value: -1;
+    inherits: false;
+}
+
+#counter {
+    transition: --num 1s;
+    counter-reset: num var(--num);
+}
+
+#counter::before {
+    content: counter(num);
+}
